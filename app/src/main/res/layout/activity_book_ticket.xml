@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_book_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.dsproject.BookTicket">
+
+    <TextView
+        android:id="@+id/bt_tv1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Enter Details"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"/>
+    <TableLayout
+        android:id="@+id/bt_scroll_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/bt_tv1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+    <TableRow>
+        <TextView
+            android:text="Source:"
+            android:textSize="20sp"
+            android:layout_marginEnd="40dp"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_source_stations"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="Destination:"
+            android:textSize="20sp"
+            android:layout_marginEnd="40dp"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_dest_stations"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="Price"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/bt_price"
+            android:text="85"
+            android:textSize="20sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="10dp">
+        <TextView
+            android:text="Balance"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/bt_balance"/>
+    </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_scroll_view"
+        android:layout_marginTop="20dp"
+        android:text="BOOK"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bt_b1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_tv2"
+        android:layout_below="@+id/bt_b1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.dsproject.EditProfile">
+
+    <TextView
+        android:text="Enter Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="26sp"
+        android:id="@+id/ep_tv1" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/ep_tv1"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ep_sv"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp">
+        <TableLayout
+            android:id="@+id/ep_scroll_view"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TableRow>
+                <TextView
+                    android:text="Password"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Enter New Password"
+                    android:id="@+id/ep_pass"
+                    android:ems="10"
+                    android:inputType="textPassword" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Confirm New Password"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Enter Password"
+                    android:id="@+id/ep_confpass"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Contact Number"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Enter 10 digit phone no"
+                    android:id="@+id/ep_contact"
+                    android:ems="10"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Address Line1"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Enter Address"
+                    android:id="@+id/ep_addr1"
+                    android:ems="10"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Address Line2"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Enter Address"
+                    android:id="@+id/ep_addr2"
+                    android:ems="10"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Address Line3"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:hint="Enter Address"
+                    android:id="@+id/ep_addr3"
+                    android:ems="10"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ep_b1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/ep_sv"
+        android:layout_centerHorizontal="true"
+        android:text="Save Changes"
+        />
+
+</RelativeLayout>
